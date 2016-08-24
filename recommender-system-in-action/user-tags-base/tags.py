@@ -32,7 +32,7 @@ def Recommend(user):
             if item in tagged_items:
                 continue
             if item not in recommend_items:
-                recommend_items[item] = wut * wti
+                recommend_items[item] = wut * wti#用户打过标签tag的次数   乘以   物品被标签tag标记过的次数
             else:
                 recommend_items[item] += wut * wti
     return recommend_items
